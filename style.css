@@ -1,0 +1,31 @@
+.section{
+    padding: 5rem 0;
+}
+
+#about-me p {
+    line-height: 2.3;
+}
+
+#contact{
+    background-color: rgb(183, 180, 180) ;
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        text-align: center !important;
+    }
+
+    .project-text{
+        order: 2;
+    }
+
+    .about-me-text {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        text-align: center !important;
+    }
+}
