@@ -11,6 +11,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- JS -->
+    <script defer src="script.js"></script>
+
     <!-- Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
@@ -50,7 +53,8 @@
         <!-- Home -->
         <section class="home section text-center" id="home">
             <div class="home_image">
-                <img src="img/Profile.jpg" alt="" class="rounded-circle img-thumbnail shadow-sm mt-4" width="350">
+                <!-- <img src="img/Profile.jpg" alt="" class="rounded-circle img-thumbnail shadow-sm mt-4" width="350"> -->
+                <img src="img/anjay.png" alt="" width="400">
             </div>
 
             <div class="home_data">
@@ -70,6 +74,9 @@
                     <div class="about-me-text col-md-8 col-lg-6 mx-md-auto mx-lg-0">
                         <p>Hi, my name is Federic Winata. I am a computer science student at Bina Nusantara University. I have interest about
                         the development of technology and computers. I got my programming skills and website development from my university. 
+                        <br><br>
+                        I have one year experience of internship in ITEL Learning Systems as Programmer and System Analyst. I handled the website 
+                        using wordpress for one year. I have also built a LMS and several internal program for the company.
                         <br><br>
                         I like to improve my skills in the Front End and Back End development. I am sure keep learning and practicing is the key to become
                         expert in the programming and website development.
@@ -167,27 +174,34 @@
       
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <form action="https://formsubmit.co/federicwinata20@gmail.com" method="POST" id="contactform">
+
+                            <div class="input-control mb-2">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Federic Winata" class="form-control" 
+                                pattern="^([a-zA-Z]+ [a-zA-Z]+$)|([a-zA-Z])+$" required>
+                                <div class="error"></div>
                             </div>
                     
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div class="input-control mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" placeholder="example@gmail.com" name="email" class="form-control" id="email"
+                                pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required>
                             </div>
       
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div class="input-control mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" placeholder="Your Phone Number" name="phone" class="form-control" id="phone" 
+                                pattern="^(?:\+62|62|0)[2-9]\d{7,12}$" required>
+                                <div class="error"></div>
                             </div>
       
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div class="input-control mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" placeholder="Type your message here.." name="message" id="message" rows="4" required></textarea>
+                                <div class="error"></div>
                             </div>
-      
+                            
                             <button type="submit" class="btn btn-primary mb-3">Submit</button>
                         </form>
                     </div>
@@ -198,12 +212,12 @@
 
     <!-- Footer -->
     <footer class="text-center p-3 bg-light">
-        <p>&copy2022 Made with <i class="bi bi-heart"></i> by Federic Winata</p>
-        <a href="https://www.instagram.com/federic_winata/"><i class="bi bi-instagram text-dark" style="font-size: 20px;"></i></a> 
-        <a href="https://www.facebook.com/giordano.winata/"><i class="bi bi-facebook mx-3 text-dark" style="font-size: 20px;"></i></a>
+        <p>&copy2024 Made with <i class="bi bi-heart"></i> by Federic Winata</p>
+        <a href="https://www.instagram.com/federic_winata/"><i class="bi bi-instagram me-3 text-dark" style="font-size: 20px;"></i></a> 
         <a href="https://www.linkedin.com/in/federic-winata-787497240/"><i class="bi bi-linkedin text-dark" style="font-size: 20px;"></i></a>
     </footer>
 
+    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
